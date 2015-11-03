@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="match_parent"
+    android:padding="5dp"
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/tvcontacto"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ivfoto"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/ibmas"
+        android:layout_toStartOf="@+id/ibmas" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/tvtelefono"
+        android:layout_below="@+id/tvcontacto"
+        android:layout_toRightOf="@+id/ivfoto"
+        android:padding="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/ibmas"
+        android:layout_toStartOf="@+id/ibmas" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivfoto"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/desconocido"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:paddingRight="5dp" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/ibmas"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/add"
+        android:onClick="add"
+      />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/ibmenos"
+        android:src="@drawable/minus"
+        android:layout_alignTop="@+id/tvcontacto"
+        android:layout_toRightOf="@+id/tvcontacto"
+        android:layout_toEndOf="@+id/tvcontacto"
+        android:onClick="menos" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/desplegable"
+        android:layout_below="@+id/tvtelefono"
+        android:layout_alignLeft="@+id/tvtelefono"
+        android:layout_alignStart="@+id/tvtelefono">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Medium Text"
+            android:id="@+id/tvotros"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp" />
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_below="@+id/desplegable"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

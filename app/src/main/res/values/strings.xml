@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">AADPractica1XML</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="add">+</string>
+
+    <string name="casa">Casa:</string>
+    <string name="trabajo">Trabajo:</string>
+    <string name="opcional">Opcional:</string>
+
+    <string name="str_borrar">Borrar</string>
+    <string name="str_editar">Editar</string>
+
+    <string name="añadir">Añadir contacto</string>
+    <string name="nombre">Nombre</string>
+    <string name="tf1">Teléfono principal</string>
+    <string name="tf2">Teléfono secundario</string>
+    <string name="tf3">Otro</string>
+
+    <string name="sincronizar">Sincronizar</string>
+    <string name="recuperar">Lista original</string>
+    <string name="recupmodif">Lista modificada</string>
+
+    <string name="ord">Ordenar Lista</string>
+
+</resources>
